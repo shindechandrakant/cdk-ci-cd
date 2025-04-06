@@ -7,7 +7,7 @@ exports.handler = async (event) => {
     const result = num1 + num2;
     return {
       statusCode: 200,
-      result: `Addtion is ${result}`,
+      body: JSON.stringify({ result: `Addtion is ${result}` }),
     };
   } catch (error) {
     return {
